@@ -1,0 +1,215 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif
+}
+
+/*BARRA MENU*/
+div.top {
+    text-align: center;
+    margin: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+div {
+    display: block;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+
+}
+li.dropdown {
+    display: inline-block;
+}
+li {
+    float: left;
+}
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(151, 163, 146);
+}
+img {
+    vertical-align: middle;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    width: 100%;
+    color: black;
+    padding: 12px 6px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    background-color: rgb(120, 150, 106);
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+  
+ul li a {
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*FINALIZAR PAGAMENTO*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background-color: #ddd;
+    padding: 25px;
+}
+
+.container form{
+    width: 700px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form .row{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column{
+    flex: 1 1 250px;
+}
+
+.column .title{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box{
+    margin: 15px 0;
+}
+
+.input-box span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box{
+    margin-top: 5px;
+}
+
+.input-box img{
+    height: 35px;
+    margin-top: 5px;
+
+}
+
+form .btn{
+    width: 100%;
+    padding: 12px;
+    background: #2F4538;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+form .btn:hover{
+    background: #0fa72b;
+}
+
+/*EXPERIÊNCIA VERDEVIVA*/
+.bloco5 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bloco5 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-right: 40px;
+}
+
+.bloco5 img {
+    margin-right: 20px;
+}
+
+/*RODAPÉ*/
+.rodape {
+    width: 100%;
+    text-align: center;
+}
+.footericones {
+    text-align: center;
+}
+.footericones p{
+    margin-bottom: 5px;
+}
+.footericones img{
+    margin-top: 30px;
+}
+.sois{
+    background-color:  rgba(120, 150, 106, 0.193);
+}

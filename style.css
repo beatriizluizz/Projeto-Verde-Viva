@@ -1,0 +1,429 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif
+}
+
+/*BARRA MENU*/
+div.top {
+    text-align: center;
+    margin: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+div {
+    display: block;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+
+}
+li.dropdown {
+    display: inline-block;
+}
+li {
+    float: left;
+}
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(151, 163, 146);
+}
+img {
+    vertical-align: middle;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    width: 100%;
+    color: black;
+    padding: 12px 6px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    background-color: rgb(120, 150, 106);
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+  
+ul li a {
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*RESPOSIVIDADE PARA A BARRA DE NAVEGAÇÃO*/
+@media (max-width: 768px){
+    ul{
+        flex-direction: column;
+        font: 20px;
+    }
+    ul li a{
+        padding: 10px;
+    }
+}
+
+/*BANNER*/
+.blocofrase {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: -25px;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+}
+
+.blocoimg {
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.blocoimg img {
+    max-width: 100%;
+    width: 45%;
+}
+
+/*BLOCO DE FRASE E ACESSE AQUI*/
+.ladoalado {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lado {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*RESPONSIVIDADE BANNER E BLOCO DE FRASE*/
+@media (max-width: 768px){
+    .blocofrase img{
+        width: 100%;
+    }
+    .blocoimg img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .ladoalado{
+        flex-direction: column;
+    }
+}
+
+/*NAVEGUE POR CATEGORIA*/
+.bloco2 {
+    background-color: rgb(120, 150, 106);
+    width: 100%;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 16px 0px 50px 0px;
+    box-sizing: border-box;
+}
+
+/*SLIDE SHOW - CARROSSEL*/
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+}
+.column img {
+    width: 100%;
+    max-width: 13.5%;
+    padding: 0px;
+    border: white solid 6px;
+}
+
+/*BOTÔES SEGUINTE E ANTERIOR*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+    transition: all 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Posicione o "botão próximo" à direita */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Ao passar o mouse, adicione uma cor de fundo cinza */
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+/*RESPONSIVIDADE SLIDES*/
+@media (max-width: 768px){
+    .column img{
+        max-width: 30%;
+        margin-left: 5%;
+    }
+    .prev, .next{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/*DUAS FOTOS DA MULHER COM JÓIA*/
+.blobo3 {
+    padding: 20px;
+    text-align: center;
+}
+.linhaverde {
+    width: 100%;
+    background-color: rgb(120, 150, 106);
+    font-size: 25px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*RESPONSIVIDADE DUAS FOTOS DA MULHER COM JÓIA*/
+@media (max-width: 768px){
+    .blocoimg img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*BIO JÓIAS VERDEVIVA - IMAGEM*/
+.bloco4 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+.leftcolumn {
+    flex: 1;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    float: left;
+}
+.card {
+    width: 100%;
+}
+.card img {
+    width: 100%;
+    display: flex;
+}
+
+/*BIO JÓIAS VERDEVIVE - FRASE*/
+.h11 {
+    text-align: center;
+}
+
+.h12 {
+    text-align: center;
+    font-size: 29px;
+    margin-top: -15px;
+}
+
+/*EXPERIÊNCIA VERDEVIVA*/
+.bloco5 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.bloco5 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-right: 40px;
+}
+.bloco5 img {
+    margin-right: 20px;
+}
+
+/*RESPONSIVIDADE EXPERIÊNCIA VERDE VIVA*/
+@media (max-width: 768px){
+    .bloco5 ul{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .bloco li{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bloco5 img{
+        margin-bottom: 10px;
+    }
+}
+
+/*RODAPÉ*/
+.rodape {
+    width: 100%;
+    text-align: center;
+}
+.footericones {
+    margin-top: 30px;
+}
+.linharodape {
+    border-top: solid 1px #D9D9D9;
+    margin-top: 100px;
+}
+.sois{
+    background-color:  rgba(120, 150, 106, 0.193);
+}
+input[type=text],
+select {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+div.forms {
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+input[type=submit] {
+    width: 100px;
+    background-color: #2F4538;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/*RESPOSIVIDADE RODAPÉ*/
+@media screen and (max-width: 768px) {
+    ul li {
+        width: 100%;
+    }
+
+    .column img {
+        width: 18%;
+    }
+
+    .bloco4 {
+        flex-direction: column;
+    }
+
+    .leftcolumn {
+        max-width: 100%;
+    }
+
+    .h12 {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+    .bloco ul {
+        padding-left: 0;
+    }
+
+    .bloco5 li {
+        flex-direction: column;
+    }
+
+    .bloco5 img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h12 {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    .blocoimg img {
+        max-width: 100%;
+    }
+
+    .bloco5 img {
+        width: 100%;
+        max-width: 110px;
+    }
+
+    .bloco5 li {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .bloco5 ul {
+        padding-left: 0;
+    }
+}
+@media (max-width: 768px){
+    .rodape{
+        padding: 10px;
+    }
+    .footericones img{
+        width: 30px;
+    }
+}

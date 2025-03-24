@@ -1,0 +1,371 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif
+}
+
+/*BARRA MENU*/
+div.top {
+    text-align: center;
+    margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+div {
+    display: block;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(151, 163, 146);
+}
+
+img {
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    width: 100%;
+    color: black;
+    padding: 12px 6px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    background-color: rgb(120, 150, 106);
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+ul li a {
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*LISTAGEM DE PRODUTOS*/
+button {
+    cursor: pointer;
+}
+
+main {
+    background: #fff;
+    padding: 0 30px 30px;
+
+    .page-title {
+        font-size: 40px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+
+        section {
+            flex: 1;
+        }
+
+        aside {
+            min-width: 250px;
+        }
+    }
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        tr {
+            border-bottom: 3px solid #eee;
+
+            th {
+                text-align: left;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                color: #666;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 3px solid #eee;
+
+            &:last-child {
+                border: 0px
+            }
+
+            td {
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
+.product {
+    display: flex;
+    align-items: center;
+
+    img {
+        border-radius: 6px;
+    }
+
+    .info {
+        margin-left: 20px;
+
+        .name {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: #666;
+        }
+    }
+}
+
+span {
+    margin: 0 10px;
+}
+
+.qty {
+    background: #eee;
+    display: inline-flex;
+    padding: 0 0;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+
+    button {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: 0;
+        padding: 0 10px;
+        font-size: 20px;
+        height: 100%;
+        
+
+        &:hover {
+            background: #ddd;
+        }
+    }
+}
+
+.remove {
+    background: #eee;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background: #ddd;
+    }
+}
+
+aside{
+    margin-left: 30px;
+    .box{
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+
+        background: #eee;
+        color: #555;
+
+        header{
+            padding: 15px 20px;
+            font-size: 18px;
+            border-bottom: 1px solid #ccc;
+        }
+        .info{
+            padding: 20px;
+            font-size: 16px;
+
+            > div{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                color: #333;
+
+                &:last-child{
+                    margin: 0;
+                }
+            }
+            button{
+                color: green;
+                background: transparent;
+                border: 0;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                i{
+                    font-size: 18px;
+                }
+            }
+        }
+        footer{
+            padding: 15px 20px;
+            background: #ddd;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    > button{
+        border: 0;
+        padding: 15px 0;
+        color: white;
+        background: green;
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+
+        &:hover{
+            background: red;
+        }
+    }
+}
+
+/*EXPERIÊNCIA VERDEVIVA*/
+.bloco5 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bloco5 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-right: 40px;
+}
+
+.bloco5 img {
+    margin-right: 20px;
+}
+
+/*RODAPÉ*/
+.rodape {
+    width: 100%;
+    text-align: center;
+}
+
+.footericones {
+    margin-top: 30px;
+}
+
+.linharodape {
+    border-top: solid 1px #D9D9D9;
+    margin-top: 100px;
+}
+.sois{
+    background-color:  rgba(120, 150, 106, 0.193);
+}
+input[type=textt],
+select {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+div.forms {
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #2F4538;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 15px;
+}
